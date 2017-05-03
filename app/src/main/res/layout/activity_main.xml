@@ -61,7 +61,7 @@
             android:layout_width="1dp"
             android:layout_height="match_parent"
             android:layout_marginTop="16dp"
-            android:background="@android:color/black" />
+            android:background="@color/text_dark" />
 
         <LinearLayout
             android:layout_width="0dp"
@@ -110,7 +110,6 @@
         android:id="@+id/Game_Over"
         android:layout_below="@id/FirstLayout"
         android:layout_marginBottom="@dimen/bottom_margin"
-        android:onClick="resetScore"
         android:text="@string/GameOver"
         android:background="@drawable/my_other_buttons"/>
     <Button
