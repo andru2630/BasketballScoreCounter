@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#004D40</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="text">#FFFFFF</color>
+    <color name="text_dark">#000000</color>
+    <color name="buttonBackground">#008248</color>
+    <color name="resetButtonBackground">#004D40</color>
+    <color name="backgroundAway">#008248</color>
+    <color name="text_away">#FFFFFF</color>
+    <color name="backgroundHome1">#2196F3</color>
+    <color name="text_away1">#FFFFFF</color>
+    <color name="appBackground">#E0E0E0</color>
+</resources>

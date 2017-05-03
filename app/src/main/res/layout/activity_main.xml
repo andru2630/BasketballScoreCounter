@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appBackground"
+    tools:context="com.example.android.basketballgame.MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/FirstLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Texts"
+                android:text="@string/home_team"
+                android:textSize="@dimen/text_dimension3" />
+
+            <ImageView
+                android:contentDescription="@string/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/chicago_bulls"
+                android:layout_gravity="center_horizontal"/>
+            <TextView
+                android:id="@+id/team_1_score"
+                style="@style/Texts"
+                android:text="@string/score_text"
+                android:textSize="@dimen/text_dimension" />
+
+            <Button
+                style="@style/Buttons"
+                android:onClick="threePointsForHomeTeam"
+                android:text="@string/threePoints"
+                />
+
+            <Button
+                style="@style/Buttons"
+                android:onClick="twoPointsForHomeTeam"
+                android:text="@string/twoPoints"
+                />
+
+            <Button
+                style="@style/Buttons"
+                android:onClick="freeThrowForHomeTeam"
+                android:text="@string/freeThrow"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/black" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Texts"
+                android:text="@string/away_team"
+                android:textSize="@dimen/text_dimension3" />
+            <ImageView
+                android:contentDescription="@string/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/celtics"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/team_2_score"
+                style="@style/Texts"
+                android:text="@string/score_text"
+                android:textSize="@dimen/text_dimension" />
+
+            <Button
+                style="@style/Buttons"
+                android:onClick="threePointsForAwayTeam"
+                android:text="@string/threePoints" />
+
+            <Button
+                style="@style/Buttons"
+                android:onClick="twoPointsForAwayTeam"
+                android:text="@string/twoPoints" />
+
+
+
+            <Button
+                style="@style/Buttons"
+                android:onClick="freeThrowForAwayTeam"
+                android:text="@string/freeThrow" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        style="@style/Other_buttons"
+        android:id="@+id/Game_Over"
+        android:layout_below="@id/FirstLayout"
+        android:layout_marginBottom="@dimen/bottom_margin"
+        android:onClick="resetScore"
+        android:text="@string/GameOver"
+        android:background="@drawable/my_other_buttons"/>
+    <Button
+        style="@style/Other_buttons"
+        android:id="@+id/Reset"
+        android:layout_below="@id/Game_Over"
+        android:onClick="resetScore"
+        android:text="@string/reset"
+        />
+</RelativeLayout>
